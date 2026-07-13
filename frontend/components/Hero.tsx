@@ -1,27 +1,33 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-slate-950 via-black to-slate-900 text-white px-6 text-center">
+    <section className="min-h-screen flex items-center justify-center bg-black text-white px-6 pb-32">
+      <div className="text-center max-w-4xl">
 
-      <h1 className="text-6xl md:text-7xl font-extrabold leading-tight">
-        Enterprise AI
-        <span className="text-blue-500"> Timeline Intelligence</span>
-      </h1>
+        <h1 className="text-5xl md:text-7xl font-bold">
+          ChronoGraph
+        </h1>
 
-      <p className="mt-6 text-xl text-gray-400 max-w-3xl">
-        ChronoGraph helps organizations understand historical engineering
-        decisions using AI, Knowledge Graphs and Timeline Retrieval.
-      </p>
+        <h2 className="text-2xl md:text-4xl mt-4 text-blue-500 font-semibold">
+          Temporal GraphRAG for Enterprise Forensics
+        </h2>
 
-      <div className="mt-10 flex gap-6">
-        <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold">
-          Get Started
-        </button>
+        <p className="mt-6 text-gray-400 text-lg">
+          Explore enterprise knowledge through AI-powered graph intelligence.
+          Connect data, discover relationships, and get meaningful insights
+          with Generative AI.
+        </p>
 
-        <button className="border border-blue-500 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-semibold">
-          Learn More
-        </button>
+        <div className="mt-8 flex justify-center gap-5">
+          <button className="bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-xxl font-semibold">
+            Explore ChronoGraph
+          </button>
+
+          <button className="border border-blue-500 hover:bg-blue-500 px-10 py-5 rounded-xxxl font-semibold">
+            View Architecture
+          </button>
+        </div>
+
       </div>
-
     </section>
   );
 }
