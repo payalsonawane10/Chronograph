@@ -1,52 +1,84 @@
 export default function LoginPage() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-black">
-      <div className="w-full max-w-md bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-white/20">
+    <main className="min-h-screen bg-gradient-to-br from-black via-slate-950 to-blue-950 flex items-center justify-center px-6">
 
-        <h1 className="text-4xl font-bold text-white text-center">
-          Chronograph
-        </h1>
+      <div className="w-full max-w-2xl bg-slate-900/70 backdrop-blur-xl border border-blue-500/30 rounded-3xl p-10 shadow-[0_0_50px_rgba(59,130,246,0.30)]">
 
-        <p className="text-gray-300 text-center mt-2">
-          Welcome Back 👋
-        </p>
+        <div className="flex justify-center mb-5">
+          <div className="w-20 h-20 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 flex items-center justify-center text-4xl shadow-lg">
+            🧠
+          </div>
+        </div>
 
-        <form className="mt-8 space-y-5">
+        <div className="text-center mb-8">
+          <h1 className="text-5xl font-bold text-white">
+            Welcome Back
+          </h1>
+
+          <p className="text-gray-400 mt-3 text-lg">
+            Sign in to continue to
+          </p>
+
+          <h2 className="text-3xl font-bold text-cyan-400 mt-2">
+            ChronoGraph
+          </h2>
+        </div>
+
+        <form className="space-y-6">
 
           <div>
-            <label className="text-gray-300">Email</label>
+            <label className="block text-gray-300 mb-2">
+              Email
+            </label>
+
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full mt-2 p-3 rounded-xl bg-white/20 text-white placeholder-gray-300 outline-none border border-white/20"
+              className="w-full px-5 py-4 rounded-2xl bg-slate-950 border border-slate-700 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
             />
           </div>
 
           <div>
-            <label className="text-gray-300">Password</label>
+            <label className="block text-gray-300 mb-2">
+              Password
+            </label>
+
             <input
               type="password"
-              placeholder="Enter password"
-              className="w-full mt-2 p-3 rounded-xl bg-white/20 text-white placeholder-gray-300 outline-none border border-white/20"
+              placeholder="Enter your password"
+              className="w-full px-5 py-4 rounded-2xl bg-slate-950 border border-slate-700 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
             />
           </div>
 
+          <div className="flex justify-between text-sm text-gray-400">
+            <label className="flex items-center gap-2">
+              <input type="checkbox" />
+              Remember me
+            </label>
+
+            <a href="#" className="hover:text-blue-400">
+              Forgot Password?
+            </a>
+          </div>
+
           <button
-            className="w-full bg-blue-600 hover:bg-blue-700 transition-all text-white py-3 rounded-xl font-semibold"
+            className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:scale-105 hover:shadow-lg transition-all duration-300 text-white font-bold text-lg"
           >
             Login
           </button>
 
         </form>
 
-        <p className="text-center text-gray-300 mt-6">
+        <div className="mt-8 text-center text-gray-400">
           Don't have an account?
-          <span className="text-blue-400 cursor-pointer ml-1">
+
+          <span className="text-cyan-400 cursor-pointer ml-2 hover:underline">
             Register
           </span>
-        </p>
+        </div>
 
       </div>
+
     </main>
   );
 }
