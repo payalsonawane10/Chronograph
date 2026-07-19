@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
 
 
 export default function LoginPage() {
@@ -73,9 +77,11 @@ export default function LoginPage() {
 
         <div className="mt-8 text-center text-gray-400">
           Don't have an account?
-          <span
+          <Link
+            href="/register"
           className="text-cyan-400 cursor-pointer ml-2 hover:underline">
-          </span>
+            Register
+          </Link>
         </div>
 
       </div>
