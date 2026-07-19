@@ -1,3 +1,5 @@
+
+
 export default function LoginPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-slate-950 to-blue-950 flex items-center justify-center px-6">
@@ -71,9 +73,8 @@ export default function LoginPage() {
 
         <div className="mt-8 text-center text-gray-400">
           Don't have an account?
-
-          <span className="text-cyan-400 cursor-pointer ml-2 hover:underline">
-            Register
+          <span
+          className="text-cyan-400 cursor-pointer ml-2 hover:underline">
           </span>
         </div>
 
